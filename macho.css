@@ -1,4 +1,9 @@
+
 h1 {
+    text-align: center;
+}
+
+p {
     text-align: center;
 }
 
@@ -34,10 +39,7 @@ a {
     margin: 0 auto;
 }
 
-.resizeimage img { 
-    width: 100%; 
-}
-/* img {
+img {
     max-width: 100%;
     height: auto;
-} */
+}
