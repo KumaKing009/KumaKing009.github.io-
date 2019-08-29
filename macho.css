@@ -1,42 +1,40 @@
- h1 {
-            text-align: center;
-        }
+h1 {
+    text-align: center;
+}
 
-        hr {
-            size: 5;
-            color: #000000;
-        }
+hr {
+    size: 5;
+    color: #000000;
+}
 
-        th {
-            padding: 5% 5%;
-            width: 50%;
-            color: black;
-            font-size: 100%;
-        }
+th {
+    padding: 5% 5%;
+    width: 50%;
+    color: black;
+    font-size: 100%;
+}
 
-        button {
-            box-shadow: 0 4pt 8pt 0 rgba(0, 0, 0, 0.2), 0 3pt 10pt 0 rgba(0, 0, 0, 0.19);
-            color: #f8f9fa;
-            /* Light */
-            background-color: #e30e2a;
-            /* Tranig-End Red */
-            width: 190pt;
-            font-weight: bold;
-            height: 40pt;
-            border: 2pt solid black;
-            border-radius: 8pt;
-        }
+button {
+    box-shadow: 0 4pt 8pt 0 rgba(0, 0, 0, 0.2), 0 3pt 10pt 0 rgba(0, 0, 0, 0.19);
+    color: #f8f9fa;
+    background-color: #e30e2a;
+    width: 190pt;
+    font-weight: bold;
+    height: 40pt;
+    border: 2pt solid black;
+    border-radius: 8pt;
+}
 
-        .wrapper {
-            text-align: center;
-        }
+.wrapper {
+    text-align: center;
+}
 
-        a {
-            display: block;
-            margin: 0 auto;
-        }
+a {
+    display: block;
+    margin: 0 auto;
+}
 
 img {
-  max-width: 100%;
-  height: atuo;
+    max-width: 100%;
+    height: auto;
 }
