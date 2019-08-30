@@ -1,3 +1,4 @@
+
 h1 {
     text-align: center;
     font-family: "Impact";
@@ -8,7 +9,14 @@ hr {
     color: #000000;
 }
 
-input {
+th {
+    padding: 5% 5%;
+    width: 50%;
+    color: black;
+    font-size: 100%;
+}
+
+button {
     box-shadow: 0 4pt 8pt 0 rgba(0, 0, 0, 0.2), 0 3pt 10pt 0 rgba(0, 0, 0, 0.19);
     color: #f8f9fa;
     background-color: #e30e2a;
@@ -17,4 +25,18 @@ input {
     height: 40pt;
     border: 2pt solid black;
     border-radius: 8pt;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+a {
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
