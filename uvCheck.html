@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+    <link href="uvCheck.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="uvCheck.js"></script>
+</head>
+
+<body>
+    <h1>日焼け止めクリーム！</h1>
+    <hr />
+    <table align="center">
+        <tr>
+            <th>ビーズの色</th>
+            <td>
+                <select name="uvIndexValue" id="uvIndex">
+                    <option value="白">白</option>
+                    <option value="薄いピンク">薄いピンク</option>
+                    <option value="ピンク">ピンク</option>
+                    <option value="濃いピンク">濃いピンク</option>
+                    <option value="よくわからない色">よくわからない色</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <div class="wrapper">
+        <button id="recommendedSunoil" onclick="onButtonClick();">おススメの日焼け止めクリームは？</button>
+    </div>
+    <hr />
+    <div id="message" class="wrapper">基本これでいい</div>
+    <a href="https://www.nivea.co.jp/products/protectwatergel-49013012987440052.html" id="linkArea" class="wrapper">
+        <img name="cream" src="日焼け止めクリーム普段用.jpg">
+    </a>
+</body>
+
+</html>
