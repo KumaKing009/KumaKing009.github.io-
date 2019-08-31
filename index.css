@@ -16,7 +16,7 @@ th {
     font-size: 100%;
 }
 
-button {
+input {
     box-shadow: 0 4pt 8pt 0 rgba(0, 0, 0, 0.2), 0 3pt 10pt 0 rgba(0, 0, 0, 0.19);
     color: #f8f9fa;
     background-color: #e30e2a;
