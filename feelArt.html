@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+    <script src="./lib/vconsole.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="../KumaKing009.github.io/feelArt.css" rel="stylesheet" type="text/css">
 </head>
@@ -28,7 +29,16 @@
     <script type="text/javascript">
 
         function sendImage()
-        {
+        {    window.vConsole = new window.VConsole({
+        defaultPlugins: ['system', 'network', 'element', 'storage'],
+        maxLogNumber: 1000,
+        onReady: function() {
+            console.log('vConsole is ready.');
+        },
+        onClearLog: function() {
+            console.log('on clearLog');
+        }
+    });
             const DavidStatue = 'その肉体美は、一つの理想。栄養バランスの良い小松菜とブロッコリーと夏蜜柑のプロテインスムージーで、少しでも理想に近づこう！';
             const LaoconeStatue = '作者不明だが、それも相まってロマンを掻き立てる作品。筋トレをした後にブルーベリーとバナナとヨーグルトのプロテインスムージーを飲み、ロマンを感じ取ろう！';
             const SocratesDeath = '知力とは筋肉である。ほうれん草とバナナのプロテインスムージーで、意思を貫徹する筋力を培おう！';
