@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "name": "proteinsmoothiebot",
+    "builds": [{ "src": "sumotheee.js", "use": "@now/node" }],
+    "routes": [
+        { "src": "/", "dest": "sumotheee.js" },
+        { "src": "/webhook", "dest": "sumotheee.js" }
+    ]
+}
