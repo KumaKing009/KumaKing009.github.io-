@@ -1,0 +1,1 @@
+curl -H "Authorization: Bearer {your_linebot_access_token}" https://api.line.me/v2/bot/richmenu/list
