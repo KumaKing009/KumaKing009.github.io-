@@ -1,3 +1,7 @@
+'use strict';
+
+const jquery = require('jquery');
+
 window.onload = function ()
 {
     initVConsole();
