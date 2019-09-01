@@ -1,0 +1,1 @@
+curl --request POST --header "Authorization: Bearer {your_linebot_access_token}" --header "Content-Type: image/png" -T "..path/image.png" https://api.line.me/v2/bot/richmenu/your_richmenu_ID/content

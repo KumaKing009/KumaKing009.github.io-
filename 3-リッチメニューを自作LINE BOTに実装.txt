@@ -1,0 +1,1 @@
+curl --request POST --header "Authorization: Bearer {your_linebot_access_token}" "https://api.line.me/v2/bot/user/your_userID/richmenu/your_richmenu_ID"
