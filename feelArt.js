@@ -1,5 +1,6 @@
-const jquery = require('jquery');
-const $ = jquery(dom.window);
+'use strict';
+
+const $ = require('jquery');
 
 window.onload = function ()
 {
