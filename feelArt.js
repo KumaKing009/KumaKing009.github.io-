@@ -1,7 +1,3 @@
-'use strict';
-
-const $ = require('jQuery');
-
 window.onload = function ()
 {
     initVConsole();
