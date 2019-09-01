@@ -82,37 +82,37 @@ function sendImage()
             {
                 case "Statue de David":
                     sendMessage = DavidStatue;
-                    document.art.src = artFolderPath + "/DavidStatue/images.jpg";
+                    document.art.src = artFolderPath + "../ArtDeSmoothie/DavidStatue/images.jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://ja.wikipedia.org/wiki/ダビデ像_(ミケランジェロ)";
                     break;
                 case "Statue Lao Cone":
                     sendMessage = LaoconeStatue;
-                    document.art.src = artFolderPath + "/LaoconeStatue/images.jpg";
+                    document.art.src = artFolderPath + "../ArtDeSmoothie/LaoconeStatue/images.jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://ja.wikipedia.org/wiki/ラオコーン像";
                     break;
                 case "La Mort de Socrate":
                     sendMessage = SocratesDeath;
-                    document.art.src = artFolderPath + "/SocratesDeath/Jean-Francois-Pierre-Peyron-The-Death-of-Socrates-4-.jpg";
+                    document.art.src = artFolderPath + "../ArtDeSmoothie/SocratesDeath/Jean-Francois-Pierre-Peyron-The-Death-of-Socrates-4-.jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://ja.wikipedia.org/wiki/ソクラテスの死";
                     break;
                 case "Esclave noyé":
                     sendMessage = DyingSlave;
-                    document.art.src = artFolderPath + "/DyingSlave/slave3.jpg";
+                    document.art.src = artFolderPath + "../ArtDeSmoothie/DyingSlave/slave3.jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://www.louvre.fr/jp/oeuvre-notices/《奴隷》";
                     break;
                 case "Penseur":
                     sendMessage = TheThinker;
-                    document.art.src = artFolderPath + "/TheThinker/71ftr9cPGAL._SX342_.jpg";
+                    document.art.src = artFolderPath + "../ArtDeSmoothie/TheThinker/71ftr9cPGAL._SX342_.jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://ja.wikipedia.org/wiki/考える人_(ロダン)";
                     break;
                 case "Statue de Bacchus":
                     sendMessage = Bacchus;
-                    document.art.src = artFolderPath + "/Bacchus/images (1).jpg";
+                    document.art.src = artFolderPath + "../ArtDeSmoothie/Bacchus/images (1).jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://ja.wikipedia.org/wiki/バックス_(ローマ神話)";
                     break;
