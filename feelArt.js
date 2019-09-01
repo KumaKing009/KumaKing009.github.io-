@@ -1,5 +1,3 @@
-const jquery = require('jquery');
-
 window.onload = function ()
 {
     initVConsole();
