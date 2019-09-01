@@ -1,3 +1,6 @@
+const jquery = require('jquery');
+const $ = jquery(dom.window);
+
 window.onload = function ()
 {
     initVConsole();
