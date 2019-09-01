@@ -1,6 +1,10 @@
+const jquery = require('jquery');
+const $ = jquery(dom.window);
+
 window.onload = function ()
 {
     initVConsole();
+    initLiff();
 }
 // Initialize vConsole
 function initVConsole()
@@ -18,6 +22,34 @@ function initVConsole()
         }
     });
 }
+
+// Initialize LIFF
+function initLiff()
+{
+    console.log('going to initialize LIFF');
+    liff.init(
+        data =>
+        {
+            console.log('LIFF initialized!');
+            // Now you can call LIFF API
+            const userId = data.context.userId;
+            liff.getProfile().then(profile =>
+            {
+                const userDisplayName = profile.displayName
+                console.info('User name is', userDisplayName);
+            })
+                .catch((err) =>
+                {
+                    console.error('LIFF getProfile failed', err);
+                });
+        },
+        err =>
+        {
+            console.error('LIFF initialization failed', err);
+        }
+    );
+}
+
 function sendImage()
 {
     const DavidStatue = 'その肉体美は、一つの理想。栄養バランスの良い小松菜とブロッコリーと夏蜜柑のプロテインスムージーで、少しでも理想に近づこう！';

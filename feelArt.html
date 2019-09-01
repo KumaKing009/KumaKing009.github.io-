@@ -3,17 +3,10 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<<<<<<< HEAD
     <script src="vconsole.min.js"></script>
     <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
     <link href="feelArt.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="feelArt.js"></script>
-=======
-    <script src="../KumaKing009.github.io/node_modules/vconsole/dist/vconsole.min.js"></script>
-    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
-    <link href="../KumaKing009.github.io/feelArt.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="../KumaKing009.github.io/feelArt.js"></script>
->>>>>>> c8a76191e7f7088134585c938990244e1911970f
 </head>
 
 <body>
@@ -32,57 +25,6 @@
     <a href="https://ja.wikipedia.org/wiki/レオニダス1世" id="linkArea" class="wrapper">
         <img id="art" name="art" src="reonidas.jpg">
     </a>
-    <script>
-        window.onload = function ()
-        {
-            initVConsole();
-            initLiff();
-
-        }
-        // Initialize vConsole
-        function initVConsole()
-        {
-            window.vConsole = new window.VConsole({
-                defaultPlugins: ['system', 'network', 'element', 'storage'],
-                maxLogNumber: 1000,
-                onReady: function ()
-                {
-                    console.log('vConsole is ready.');
-                },
-                onClearLog: function ()
-                {
-                    console.log('on clearLog');
-                }
-            });
-        }
-
-        // Initialize LIFF
-        function initLiff()
-        {
-            console.log('going to initialize LIFF');
-            liff.init(
-                data =>
-                {
-                    console.log('LIFF initialized!');
-                    // Now you can call LIFF API
-                    const userId = data.context.userId;
-                    liff.getProfile().then(profile =>
-                    {
-                        const userDisplayName = profile.displayName
-                        console.info('User name is', userDisplayName);
-                    })
-                        .catch((err) =>
-                        {
-                            console.error('LIFF getProfile failed', err);
-                        });
-                },
-                err =>
-                {
-                    console.error('LIFF initialization failed', err);
-                }
-            );
-        }
-    </script>
 </body>
 
 </html>
