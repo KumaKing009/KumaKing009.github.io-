@@ -1,6 +1,6 @@
 'use strict';
 
-var $ = require('jquery');
+const $ = require('jQuery');
 
 window.onload = function ()
 {
