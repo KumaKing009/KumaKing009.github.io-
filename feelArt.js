@@ -47,7 +47,7 @@ function initLiff()
     );
 }
 
-function sendImage()
+$(function sendImage()
 {
     const DavidStatue = 'その肉体美は、一つの理想。栄養バランスの良い小松菜とブロッコリーと夏蜜柑のプロテインスムージーで、少しでも理想に近づこう！';
     const LaoconeStatue = '作者不明だが、それも相まってロマンを掻き立てる作品。筋トレをした後にブルーベリーとバナナとヨーグルトのプロテインスムージーを飲み、ロマンを感じ取ろう！';
@@ -132,4 +132,4 @@ function sendImage()
         {
             document.getElementById("message").innerHTML = "もう一度試したまえ。";
         });
-}
+})
