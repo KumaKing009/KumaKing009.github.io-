@@ -60,7 +60,7 @@ function sendImage()
         // Request parameters
         "iterationId": "18035052-8220-4031-8635-01d8c00f419e",
     };
-    sendImage.getSettings().setJavaScriptEnabled(true);
+
     $.ajax({
         url: "https://japaneast.api.cognitive.microsoft.com/customvision/v3.0/Prediction/3e92ee0d-7155-4bd5-8428-0256d5cc3b22/classify/iterations/Iteration1/image?" + $.param(params),
         beforeSend: function (xhrObj)
