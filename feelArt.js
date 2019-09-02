@@ -55,19 +55,19 @@ $(function sendImage()
     const DyingSlave = '未完ゆえの美か、作者の飽くなき探求心の発露か。リンゴとイチゴと豆乳のプロテインスムージーで頭のモヤを晴らし、哲学に耽ろう。それもまた筋トレ。';
     const TheThinker = '地獄とは何か、この作品と共に思案に暮れるのも一興。小松菜とバナナとヨーグルトのプロテインスムージーで、思考する筋力を付けよう！';
     const Bacchus = '美酒に酔う感覚は得も言われぬ快感だ。しかし、プロテインスムージーとお酒の相性は最悪なので、やめようね！';
-    const artFolderPath = "C:/Users/z_nin/Documents/mylinebot/machoBot_all-in/ArtDeSmoothie";
+    const artFolderPath = "yourPictureFolderPath";
     const params = {
         // Request parameters
         "iterationId": "18035052-8220-4031-8635-01d8c00f419e",
     };
 
     $.ajax({
-        url: "https://japaneast.api.cognitive.microsoft.com/customvision/v3.0/Prediction/3e92ee0d-7155-4bd5-8428-0256d5cc3b22/classify/iterations/Iteration1/image?" + $.param(params),
+        url: "yourCustomVisionURL" + $.param(params),
         beforeSend: function (xhrObj)
         {
             // Request headers
             xhrObj.setRequestHeader("Content-Type", "multipart/form-data");
-            xhrObj.setRequestHeader("Prediction-key", "ca895d8bab704bc69d4d2cafcaf31020");
+            xhrObj.setRequestHeader("Prediction-key", "yourPredictionKey");
         },
         type: "POST",
         data: $("input[name='file']").prop("files")[0],
@@ -82,37 +82,37 @@ $(function sendImage()
             {
                 case "Statue de David":
                     sendMessage = DavidStatue;
-                    document.art.src = artFolderPath + "../ArtDeSmoothie/DavidStatue/images.jpg";
+                    document.art.src = artFolderPath + "../KumaKing009.github.io/ArtDeSmoothie/DavidStatue/images.jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://ja.wikipedia.org/wiki/ダビデ像_(ミケランジェロ)";
                     break;
                 case "Statue Lao Cone":
                     sendMessage = LaoconeStatue;
-                    document.art.src = artFolderPath + "../ArtDeSmoothie/LaoconeStatue/images.jpg";
+                    document.art.src = artFolderPath + "../KumaKing009.github.io/ArtDeSmoothie/LaoconeStatue/images.jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://ja.wikipedia.org/wiki/ラオコーン像";
                     break;
                 case "La Mort de Socrate":
                     sendMessage = SocratesDeath;
-                    document.art.src = artFolderPath + "../ArtDeSmoothie/SocratesDeath/Jean-Francois-Pierre-Peyron-The-Death-of-Socrates-4-.jpg";
+                    document.art.src = artFolderPath + "../KumaKing009.github.io/ArtDeSmoothie/SocratesDeath/Jean-Francois-Pierre-Peyron-The-Death-of-Socrates-4-.jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://ja.wikipedia.org/wiki/ソクラテスの死";
                     break;
                 case "Esclave noyé":
                     sendMessage = DyingSlave;
-                    document.art.src = artFolderPath + "../ArtDeSmoothie/DyingSlave/slave3.jpg";
+                    document.art.src = artFolderPath + "../KumaKing009.github.io/ArtDeSmoothie/DyingSlave/slave3.jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://www.louvre.fr/jp/oeuvre-notices/《奴隷》";
                     break;
                 case "Penseur":
                     sendMessage = TheThinker;
-                    document.art.src = artFolderPath + "../ArtDeSmoothie/TheThinker/71ftr9cPGAL._SX342_.jpg";
+                    document.art.src = artFolderPath + "../KumaKing009.github.io/ArtDeSmoothie/TheThinker/71ftr9cPGAL._SX342_.jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://ja.wikipedia.org/wiki/考える人_(ロダン)";
                     break;
                 case "Statue de Bacchus":
                     sendMessage = Bacchus;
-                    document.art.src = artFolderPath + "../ArtDeSmoothie/Bacchus/images (1).jpg";
+                    document.art.src = artFolderPath + "../KumaKing009.github.io/ArtDeSmoothie/Bacchus/images (1).jpg";
                     document.getElementById("message").innerHTML = sendMessage;
                     document.getElementById("linkArea").href = "https://ja.wikipedia.org/wiki/バックス_(ローマ神話)";
                     break;
